@@ -1,5 +1,6 @@
 #include <iostream>
 #include <list>
+#include<cstring>
 using namespace std;
 int main()
 {
@@ -29,6 +30,13 @@ int main()
 	{
 		cout << *it << " ";
 	}
+	// list<string, int> la;
+	// la.push_back("aa",1);
+	// la.push_back("bb",2);
+	// for (list<string, int>::iterator it = la.begin(); it != la.end(); i++)
+	// {
+		
+	// }
 	
 	// vector<int> vec;
 	// vec.push_back(0);
