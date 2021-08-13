@@ -17,3 +17,8 @@ auto start_time = chrono::high_resolution_clock::now();
 //     }
 // }
 auto serial_time = chrono::high_resolution_clock::now();
+
+printf("the time need for using serial programming is %.2f microseconds,the time need for using parallel programming is %.2f microseconds,the speedup is%.2f,the number of processors is%d\n",
+       duration_cast<microseconds>(serial_time - start_time).count() / 1e6,
+       duration_cast<microseconds>(paral_time - serial_time).count() / 1e6,
+       speedup, coreNum);
