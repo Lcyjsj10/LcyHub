@@ -5,19 +5,12 @@ const int inf = 0x7fffffff;
 const int MAXN = 1e5;
 const int MAXM = 1e6;
 
-atomic<int> dis[MAXN];
+int dis[MAXN];
 int father[MAXN];
 bool vis[MAXN];
 set<int> B[MAXN];
 int tot;
 set<int, less<int>> Q; //用于存放非空的桶编号
-
-void upd_min(atomic<int> &a, int v)
-{
-    int x = a.load();
-    while (!a.compare_exchange_strong(x, min(v, x)))
-        x = a.load();
-}
 
 struct edge
 {
@@ -175,8 +168,8 @@ int main()
     int s;
     cin >> s;
     delta_stepping(G, s, delta);
-    // print_dis(G, s);
-    print_shortest_path(G, s);
+    print_dis(G, s);
+    // print_shortest_path(G, s);
 }
 
 void print_dis(graph &G, int s)
