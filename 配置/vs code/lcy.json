@@ -1,0 +1,142 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "kite.showWelcomeNotificationOnStartup": false,
+    "editor.formatOnSave": true,
+    "leetcode.endpoint": "leetcode-cn",
+    "leetcode.workspaceFolder": "c:\\Users\\User\\Desktop\\计算机\\code\\C++",
+    "leetcode.hint.configWebviewMarkdown": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.guides.bracketPairs": true,
+    "editor.fontSize": 18,
+    "python.analysis.completeFunctionParens": true,
+    "python.languageServer": "Default",
+    "files.autoGuessEncoding": true,
+    "code-runner.runInTerminal": true,
+    "files.autoSave": "onFocusChange",
+    "workbench.editorAssociations": {
+      "*.ipynb": "jupyter.notebook.ipynb",
+      "*.md": "vscode.markdown.preview.editor"
+    },
+    "[json]": {
+      "editor.quickSuggestions": {
+        "strings": true
+      },
+      "editor.suggest.insertMode": "replace"
+    },
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.showContextMenu": true,
+    "latex-workshop.intellisense.package.enabled": true,
+    "latex-workshop.message.error.show": false,
+    "latex-workshop.message.warning.show": false,
+    
+    "latex-workshop.latex.tools": 
+    [
+        {
+          "name": "latexmk",
+          "command": "latexmk",
+          "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "-pdf",
+            "%DOC%"
+          ]
+        },
+        {
+          "name": "xelatex",
+          "command": "xelatex",
+          "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "%DOC%"
+          ]
+        },
+        {
+          "name": "pdflatex",
+          "command": "pdflatex",
+          "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "%DOC%"
+          ]
+        },
+        {
+          "name": "bibtex",
+          "command": "bibtex",
+          "args": [
+            "%DOCFILE%"
+          ]
+        }
+      ],
+      "latex-workshop.latex.recipes": [
+        {
+          "name": "latexmk",
+          "tools": [
+            "latexmk"
+          ]
+        },
+        {
+          "name": "xelatex",
+          "tools": [
+            "xelatex"
+          ]
+        },
+        {
+          "name": "pdflatex -> bibtex",
+          "tools": [
+            "pdflatex",
+            "bibtex"
+          ]
+        },
+        {
+          "name": "pdflatex -> bibtex -> pdflatex*2",
+          "tools": [
+            "pdflatex",
+            "bibtex",
+            "pdflatex",
+            "pdflatex"
+          ]
+        },
+        {
+          "name": "xelatex -> bibtex -> xelatex*2",
+          "tools": [
+            "xelatex",
+            "bibtex",
+            "xelatex",
+            "xelatex"
+          ]
+        }
+      ],
+      "latex-workshop.view.pdf.viewer": "tab",
+      "C_Cpp.updateChannel": "Insiders",
+      "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk"
+      ],
+      "latex-workshop.bibtex-format.tab": "4 spaces",
+      "latex-workshop.latex.autoClean.run": "onFailed",
+      "latex-workshop.latex.recipe.default": "lastUsed",
+      "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
+      "editor.suggestSelection": "first",
+      "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    
+}
